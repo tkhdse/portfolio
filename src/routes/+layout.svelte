@@ -1,7 +1,6 @@
 <script lang="ts">
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
-
 	let { children } = $props();
 </script>
 
@@ -17,7 +16,7 @@
 
 <style>
 	:global(body) {
-		background-color: #333333;
+		background-color: #222222;
 	}
 </style>
 
