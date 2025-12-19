@@ -16,7 +16,7 @@
 
 <style>
 	:global(body) {
-		background-color: #222222;
+		background-color: #1a1a1a;
 	}
 </style>
 
