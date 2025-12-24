@@ -1,7 +1,5 @@
 {
-    "name": "exp",
+    "name": "portfolio",
     "compatibility_date": "2025-12-24",
-    "assets": {
-        "directory": "./dist"
-    }
+    "pages_build_output_dir": ".svelte-kit/cloudflare"
 }
