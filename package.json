@@ -39,6 +39,7 @@
 		"wrangler": "^4.54.0"
 	},
 	"dependencies": {
-		"@fortawesome/fontawesome-free": "^7.1.0"
+		"@fortawesome/fontawesome-free": "^7.1.0",
+		"@sveltejs/adapter-vercel": "^6.2.0"
 	}
 }
