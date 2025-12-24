@@ -84,9 +84,9 @@
         <li>
             <div class="flex justify-between items-baseline gap-4">
                 <div class="flex items-baseline gap-3 flex-wrap">
-                    <span class="text-white text-lg">Custom LLVM-based Compiler with Optimizations</span>
+                    <span class="text-white text-lg">LLVM-based Compiler with Optimizations</span>
                     <span class="flex gap-2 text-xs">
-                        <!-- <a href="#" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[blog]</a> -->
+                        <a href="#" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[blog]</a>
                         <!-- <a href="#" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[github]</a> -->
                     </span>
                 </div>
