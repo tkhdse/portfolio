@@ -25,7 +25,7 @@
                 <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">Hi, I'm Tanish 👋</h1>
                 <div class="flex-col space-y-6 sm:space-y-4 text-sm sm:text-md text-gray-300 leading-relaxed">
                     <p>I'm pursuing my BS-MCS degree at UIUC. I love work involving C++, Go, low-level systems, distributed systems, and compilers. Recently, I've been looking into GPU programming.</p>
-                    <p>If you're looking for an engineer with a strong foundation in systems and a drive for high performance, please feel free to reach out!</p>
+                    <p>Please feel free to reach out! I'm happy to chat :)</p>
                 </div>
             </div>
             
@@ -33,50 +33,50 @@
         <!-- Divider -->
         <div class="w-full h-px bg-white mb-12 sm:mb-16"></div>
 
-        <!-- Work Experience -->
-        <div class="mb-12 sm:mb-16">
-            <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Work Experience</h2>
-            <ul class="list-disc list-outside ml-5 space-y-4 text-sm sm:text-base text-gray-300">
-                <li>
-                    <div class="flex justify-between items-baseline gap-4 text-xl">
-                        <span class="font-semibold text-white">Salesforce | <span class="text-gray-300 font-light text-sm">Software Engineering Intern</span></span>
-                        <span class="text-gray-400 whitespace-nowrap text-sm">May 2025 - Aug 2025</span>
-                    </div>
-                    <ul class="list-[circle] list-outside ml-6 mt-2 text-sm text-gray-300">
-                        <li>high availablility & real-time translation</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="flex justify-between items-baseline gap-4 text-xl">
-                        <span class="font-semibold text-white">Nightshift | <span class="text-gray-300 font-light text-sm">Co-founder/CTO</span></span>
-                        <span class="text-gray-400 whitespace-nowrap text-sm">Jan 2025 - present</span>
-                    </div>
-                    <ul class="list-[circle] list-outside ml-6 mt-2 text-sm text-gray-300">
-                        <li>voice AI agents for hotel automation</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="flex justify-between items-baseline gap-4 text-xl">
-                        <span class="font-semibold text-white">Yahoo | <span class="text-gray-300 font-light text-sm">Software Engineering Intern</span></span>
-                        <span class="text-gray-400 whitespace-nowrap text-sm">Jun 2024 - Aug 2024</span>
-                    </div>
-                    <ul class="list-[circle] list-outside ml-6 mt-2 text-sm text-gray-300">
-                        <li>data pipeline observability</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="flex justify-between items-baseline gap-4 text-xl">
-                        <span class="font-semibold text-white">ML Research @ UIUC</span>
-                        <span class="text-gray-400 whitespace-nowrap text-sm">Oct 2023 - March 2024</span>
-                    </div>
-                    <ul class="list-[circle] list-outside ml-6 mt-2 text-sm text-gray-300">
-                        <li>model speedup with CUDA & long-sequence inference</li>
-                    </ul>
-                </li>
+<!-- Work Experience -->
+<div class="mb-12 sm:mb-16">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Work Experience</h2>
+    <ul class="list-disc list-outside ml-5 space-y-4 text-sm sm:text-base text-gray-300">
+        <li>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-4">
+                <span class="font-semibold text-white text-lg sm:text-xl">Salesforce | <span class="text-gray-300 font-light text-sm">Software Engineering Intern</span></span>
+                <span class="text-gray-400 text-xs sm:text-sm whitespace-nowrap">May 2025 - Aug 2025</span>
+            </div>
+            <ul class="list-[circle] list-outside ml-6 mt-2 text-sm text-gray-300">
+                <li>high availablility & real-time translation</li>
             </ul>
-        </div>
+        </li>
+        <li>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-4">
+                <span class="font-semibold text-white text-lg sm:text-xl">Nightshift | <span class="text-gray-300 font-light text-sm">Co-founder/CTO</span></span>
+                <span class="text-gray-400 text-xs sm:text-sm whitespace-nowrap">Jan 2025 - present</span>
+            </div>
+            <ul class="list-[circle] list-outside ml-6 mt-2 text-sm text-gray-300">
+                <li>voice AI agents for hotel automation</li>
+            </ul>
+        </li>
+        <li>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-4">
+                <span class="font-semibold text-white text-lg sm:text-xl">Yahoo | <span class="text-gray-300 font-light text-sm">Software Engineering Intern</span></span>
+                <span class="text-gray-400 text-xs sm:text-sm whitespace-nowrap">Jun 2024 - Aug 2024</span>
+            </div>
+            <ul class="list-[circle] list-outside ml-6 mt-2 text-sm text-gray-300">
+                <li>data pipeline observability</li>
+            </ul>
+        </li>
+        <li>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-4">
+                <span class="font-semibold text-white text-lg sm:text-xl">ML Research @ UIUC</span>
+                <span class="text-gray-400 text-xs sm:text-sm whitespace-nowrap">Oct 2023 - March 2024</span>
+            </div>
+            <ul class="list-[circle] list-outside ml-6 mt-2 text-sm text-gray-300">
+                <li>model speedup with CUDA & long-sequence inference</li>
+            </ul>
+        </li>
+    </ul>
+</div>
 
-        <!-- Projects -->
+
 <!-- Projects -->
 <div class="mb-12 sm:mb-16">
     <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Projects</h2>
