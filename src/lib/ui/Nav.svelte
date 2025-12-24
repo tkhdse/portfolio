@@ -9,7 +9,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 <div class="p-6 w-full flex justify-between">
     <h1 class="text-xl cursor-pointer"><a href="/">Tanish Khadse</a></h1>
     <div>
-        <ul class="flex flex-row text-lg space-x-10">
+        <ul class="flex flex-row text-lg space-x-4">
             <!-- <li class="transition hover:border-b-2">blog</li> -->
             <li>
                 <a href="https://www.linkedin.com/in/tkhadse/" title="linkedin">

@@ -1,65 +1,6 @@
 <script>
     import Nav from '../lib/ui/Nav.svelte'
     import profilePic from '$lib/assets/profile.png';
-    
-    const experiences = [
-        {
-            type: 'work',
-            title: 'Software Engineering Intern',
-            organization: 'Salesforce',
-            date: 'May 2025 - Aug 2025',
-            description: 'Led development of key features and mentored junior developers.',
-            skills: ['React', 'Node.js', 'Redis', 'AWS', 'PostgreSQL']
-        },
-        {
-            type: 'work',
-            title: 'Co-founder & CTO',
-            organization: 'Nightshift',
-            date: 'Jan 2025 - present',
-            description: 'Built scalable backend services and improved system performance.',
-            skills: ['React', 'Python', 'LiveKit', 'Twilio', 'Redis', 'Langchain', 'Docker', 'GCP', 'Firestore']
-        },
-        {
-            type: 'work',
-            title: 'Software Engineering Intern',
-            organization: 'Yahoo',
-            date: 'June 2024 - Aug 2024',
-            description: 'Led development of key features and mentored junior developers.',
-            skills: ['Nuxt', 'Vue', 'Node.js', 'Python', 'Firestore', 'GCP', 'GKE', 'Terraform']
-        },
-        {
-            type: 'work',
-            title: 'Software Developer',
-            organization: 'Hack4Impact',
-            date: 'Jan 2024 - Jan 2025',
-            description: 'Led development of key features and mentored junior developers.',
-            skills: ['React', 'PostgreSQL', 'Supabase']
-        },
-        {
-            type: 'work',
-            title: 'Machine Learning Research Intern',
-            organization: 'UIUC',
-            date: 'Oct 2023 - Mar 2024',
-            description: 'Led development of key features and mentored junior developers.',
-            skills: ['C++', 'CUDA', 'Python', 'PyTorch']
-        },
-        {
-            type: 'project',
-            title: 'E-Commerce Platform',
-            organization: 'Personal Project',
-            date: '2023',
-            description: 'Full-stack e-commerce solution with payment integration.',
-            skills: ['Svelte', 'Firebase', 'Stripe']
-        },
-        {
-            type: 'project',
-            title: 'AI Chat Application',
-            organization: 'Hackathon Winner',
-            date: '2022',
-            description: 'Real-time chat application with AI-powered responses.',
-            skills: ['WebSocket', 'OpenAI', 'Redis']
-        }
-    ];
 </script>
 
 <div class="w-full h-full text-white font-mono">
@@ -82,56 +23,155 @@
             <!-- Text Content -->
             <div class="flex-1 order-2 md:order-1 text-center md:text-left">
                 <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">Hi, I'm Tanish 👋</h1>
-                <div class="flex-col space-y-3 sm:space-y-4 text-sm sm:text-md text-gray-300 leading-relaxed">
-                    <p>I'm pursuing my BS-MCS degree at UIUC and was previously at Salesforce, Yahoo, and my startup, Nightshift. I'm a passionate engineer focused on building robust, high-performance systems from the metal up through the cloud.</p>
-                    <p>I love work involving C++, Go, CUDA, low-level systems, distributed systems, and compilers.</p>
-                    <p>If you are looking for an engineer with a strong foundation in systems and a drive for high performance, please feel free to reach out!</p>
+                <div class="flex-col space-y-6 sm:space-y-4 text-sm sm:text-md text-gray-300 leading-relaxed">
+                    <p>I'm pursuing my BS-MCS degree at UIUC. I love work involving C++, Go, low-level systems, distributed systems, and compilers. Recently, I've been looking into GPU programming.</p>
+                    <p>If you're looking for an engineer with a strong foundation in systems and a drive for high performance, please feel free to reach out!</p>
                 </div>
             </div>
-        </div>
-        
-        <!-- Timeline Container -->
-        <div class="relative">
-                        
-            <!-- Vertical Line -->
-            <div class="absolute left-0 top-0 bottom-0 w-[2px] bg-white"></div>
             
-            <!-- Timeline Items -->
-            <div class="space-y-8 sm:space-y-10 md:space-y-12 ml-6 sm:ml-8">
-                {#each experiences as exp, i}
-                    <div class="relative">
-                        <!-- Timeline Dot -->
-                        <div class="absolute -left-[25px] sm:-left-[33px] top-2 w-3 h-3 sm:w-4 sm:h-4 bg-white rounded-full border-2 sm:border-4 border-[#1e1e1e]"></div>
-                        
-                        <!-- Content Card -->
-                        <div>
-                            <!-- Type Badge -->
-                            <div class="mb-2">
-                                <span class="text-xs uppercase tracking-wider px-2 py-1 rounded {exp.type === 'work' ? 'bg-blue-500/20 text-blue-300' : 'bg-green-500/20 text-green-300'}">
-                                    {exp.type}
-                                </span>
-                            </div>
-                            
-                            <!-- Title and Organization -->
-                            <h3 class="text-lg sm:text-xl md:text-2xl font-bold mb-1">{exp.title}</h3>
-                            <p class="text-sm sm:text-base text-gray-400 mb-1">{exp.organization}</p>
-                            <p class="text-xs sm:text-sm text-gray-500 mb-3">{exp.date}</p>
-                            
-                            <!-- Description -->
-                            <p class="text-sm sm:text-base text-gray-300 mb-4 leading-relaxed">{exp.description}</p>
-                            
-                            <!-- Skills -->
-                            <div class="flex flex-wrap gap-2">
-                                {#each exp.skills as skill}
-                                    <span class="text-xs px-2 sm:px-3 py-1 bg-white/10 rounded-full border border-white/20 hover:bg-white/20 transition">
-                                        {skill}
-                                    </span>
-                                {/each}
-                            </div>
-                        </div>
-                    </div>
-                {/each}
-            </div>
         </div>
+        <!-- Divider -->
+        <div class="w-full h-px bg-white mb-12 sm:mb-16"></div>
+
+        <!-- Work Experience -->
+        <div class="mb-12 sm:mb-16">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Work Experience</h2>
+            <ul class="list-disc list-outside ml-5 space-y-4 text-sm sm:text-base text-gray-300">
+                <li>
+                    <div class="flex justify-between items-baseline gap-4 text-xl">
+                        <span class="font-semibold text-white">Salesforce | <span class="text-gray-300 font-light text-sm">Software Engineering Intern</span></span>
+                        <span class="text-gray-400 whitespace-nowrap text-sm">May 2025 - Aug 2025</span>
+                    </div>
+                    <ul class="list-[circle] list-outside ml-6 mt-2 text-sm text-gray-300">
+                        <li>high availablility & real-time translation</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="flex justify-between items-baseline gap-4 text-xl">
+                        <span class="font-semibold text-white">Nightshift | <span class="text-gray-300 font-light text-sm">Co-founder/CTO</span></span>
+                        <span class="text-gray-400 whitespace-nowrap text-sm">Jan 2025 - present</span>
+                    </div>
+                    <ul class="list-[circle] list-outside ml-6 mt-2 text-sm text-gray-300">
+                        <li>voice AI agents for hotel automation</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="flex justify-between items-baseline gap-4 text-xl">
+                        <span class="font-semibold text-white">Yahoo | <span class="text-gray-300 font-light text-sm">Software Engineering Intern</span></span>
+                        <span class="text-gray-400 whitespace-nowrap text-sm">Jun 2024 - Aug 2024</span>
+                    </div>
+                    <ul class="list-[circle] list-outside ml-6 mt-2 text-sm text-gray-300">
+                        <li>data pipeline observability</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="flex justify-between items-baseline gap-4 text-xl">
+                        <span class="font-semibold text-white">ML Research @ UIUC</span>
+                        <span class="text-gray-400 whitespace-nowrap text-sm">Oct 2023 - March 2024</span>
+                    </div>
+                    <ul class="list-[circle] list-outside ml-6 mt-2 text-sm text-gray-300">
+                        <li>model speedup with CUDA & long-sequence inference</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Projects -->
+<!-- Projects -->
+<div class="mb-12 sm:mb-16">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Projects</h2>
+    <ul class="list-disc list-outside ml-5 space-y-4 text-sm sm:text-base text-gray-300">
+        <li>
+            <div class="flex justify-between items-baseline gap-4">
+                <div class="flex items-baseline gap-3 flex-wrap">
+                    <span class="text-white text-lg">Custom LLVM-based Compiler with Optimizations</span>
+                    <span class="flex gap-2 text-xs">
+                        <!-- <a href="#" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[blog]</a> -->
+                        <!-- <a href="#" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[github]</a> -->
+                    </span>
+                </div>
+                <span class="text-gray-400 whitespace-nowrap text-sm">Fall 2025 - present</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex justify-between items-baseline gap-4">
+                <div class="flex items-baseline gap-3 flex-wrap">
+                    <span class="text-white text-lg">Hierarchical HLM (HiLM) </span>
+                    <span class="flex gap-2 text-xs">
+                        <!-- <a href="#" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[blog]</a> -->
+                        <a href="https://github.com/gohinv/HiLM" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[github]</a>
+                    </span>
+                </div>
+                <span class="text-gray-400 whitespace-nowrap text-sm">Fall 2025 - present</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex justify-between items-baseline gap-4">
+                <div class="flex items-baseline gap-3 flex-wrap">
+                    <span class="text-white text-lg">Query Reorder Buffer (QRB) for Efficient RAG </span>
+                    <span class="flex gap-2 text-xs">
+                        <a href="https://github.com/tkhdse/QRB" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[github]</a>
+                    </span>
+                </div>
+                <span class="text-gray-400 whitespace-nowrap text-sm">Fall 2025</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex justify-between items-baseline gap-4">
+                <div class="flex items-baseline gap-3 flex-wrap">
+                    <span class="text-white text-lg">Transport Protocol</span>
+                    <span class="flex gap-2 text-xs">
+                        <!-- <a href="#" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[github]</a> -->
+                    </span>
+                </div>
+                <span class="text-gray-400 whitespace-nowrap text-sm">Fall 2024</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex justify-between items-baseline gap-4">
+                <div class="flex items-baseline gap-3 flex-wrap">
+                    <span class="text-white text-lg">Linux Kernel Modules</span>
+                    <span class="flex gap-2 text-xs">
+                        <!-- <a href="#" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[github]</a> -->
+                    </span>
+                </div>
+                <span class="text-gray-400 whitespace-nowrap text-sm">Fall 2024</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex justify-between items-baseline gap-4">
+                <div class="flex items-baseline gap-3 flex-wrap">
+                    <span class="text-white text-lg">Autonomous F1-Tenth Vehicle</span>
+                    <span class="flex gap-2 text-xs">
+                        <a href="https://github.com/gohinv/f1tenth-project" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[github]</a>
+                    </span>
+                </div>
+                <span class="text-gray-400 whitespace-nowrap text-sm">Fall 2024</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex justify-between items-baseline gap-4">
+                <div class="flex items-baseline gap-3 flex-wrap">
+                    <span class="text-white text-lg">Raft</span>
+                    <span class="flex gap-2 text-xs">
+                        <!-- <a href="#" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[github]</a> -->
+                    </span>
+                </div>
+                <span class="text-gray-400 whitespace-nowrap text-sm">Spring 2024</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex justify-between items-baseline gap-4">
+                <div class="flex items-baseline gap-3 flex-wrap">
+                    <span class="text-white text-lg">CUDA-Accelerated Convolutional Neural Network</span>
+                    <span class="flex gap-2 text-xs">
+                        <!-- <a href="#" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">github</a> -->
+                    </span>
+                </div>
+                <span class="text-gray-400 whitespace-nowrap text-sm">Fall 2023</span>
+            </div>
+        </li>
+    </ul>
+</div>
     </div>
 </div>
