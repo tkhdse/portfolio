@@ -20,14 +20,19 @@
                 />
             </div>
             
-            <!-- Text Content -->
-            <div class="flex-1 order-2 md:order-1 text-center md:text-left">
-                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">Hi, I'm Tanish 👋</h1>
-                <div class="flex-col space-y-6 sm:space-y-4 text-sm sm:text-md text-gray-300 leading-relaxed">
-                    <p>I'm pursuing my BS-MCS degree at UIUC. I love work involving C++, Go, low-level systems, distributed systems, and compilers. Recently, I've been looking into GPU programming.</p>
-                    <p>Please feel free to reach out! I'm happy to chat :)</p>
-                </div>
-            </div>
+        <!-- Text Content -->
+        <div class="flex-1 order-2 md:order-1 text-left">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">Hi, I'm Tanish 👋</h1>
+            <ul class="flex-col space-y-6 sm:space-y-4 text-sm sm:text-md text-gray-300 leading-relaxed list-disc list-outside ml-5 [&>li::marker]:text-xl [&>li::marker]:text-white">
+                <li>I'm pursuing my BS-MCS degree at UIUC. I love challenging low-level work & have a drive for impact.</li>
+                <li>Recently, I've gotten into GPU programming.</li>
+                <li>I'm going to go pro in ping pong one day.</li>
+                <li>I'm happy to chat :) </li>
+                <ul class="list-[circle] list-outside ml-6 mt-2 text-[0.75rem] text-gray-300">
+                    <li>tkhadse2 [at] illinois [dot] edu</li>
+                </ul>
+            </ul>
+        </div>
             
         </div>
         <!-- Divider -->
