@@ -18,6 +18,46 @@
 <style>
 	:global(body) {
 		background-color: #1a1a1a;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	}
+
+	:global(.light-mode body) {
+		background-color: #F2F0EF;
+	}
+
+	/* Override all white text to dark in light mode */
+	:global(.light-mode .text-white) {
+		color: #66615E !important;
+	}
+
+	/* Override all gray text to medium dark in light mode */
+	:global(.light-mode .text-gray-300),
+	:global(.light-mode .text-gray-400) {
+		color: #5a5654 !important;
+	}
+
+	/* Override divider background */
+	:global(.light-mode .bg-white) {
+		background-color: #5a5654 !important;
+	}
+
+	/* Override hover states */
+	:global(.light-mode .hover\:text-white:hover) {
+		color: #66615E !important;
+	}
+
+	:global(.light-mode .hover\:border-white:hover) {
+		border-color: #66615E !important;
+	}
+
+	/* Override border colors */
+	:global(.light-mode .border-gray-400) {
+		border-color: #5a5654 !important;
+	}
+
+	/* Override marker colors */
+	:global(.light-mode ul li::marker) {
+		color: #66615E !important;
 	}
 </style>
 
