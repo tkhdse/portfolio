@@ -16,7 +16,7 @@
                 <img 
                     src={profilePic} 
                     alt="Tanish Khadse" 
-                    class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full object-cover shadow-2xl"
+                    class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full object-cover profile-shadow"
                 />
             </div>
             

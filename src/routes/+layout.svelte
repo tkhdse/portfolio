@@ -25,6 +25,11 @@
 		background-color: #F2F0EF;
 	}
 
+	/* Profile picture shadow only in light mode */
+	:global(.light-mode .profile-shadow) {
+		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+	}
+
 	/* Override all white text to dark in light mode */
 	:global(.light-mode .text-white) {
 		color: #66615E !important;
