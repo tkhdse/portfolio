@@ -30,7 +30,7 @@ if (browser) {
 <div class="p-6 w-full flex justify-between">
     <h1 class="text-xl cursor-pointer"><a href="/">Tanish Khadse</a></h1>
     <div>
-        <ul class="flex flex-row text-lg space-x-4 items-center">
+        <ul class="flex flex-row text-lg space-x-4 ">
             <!-- Theme Toggle Button -->
             <li>
                 <button 
@@ -45,6 +45,11 @@ if (browser) {
                         <i class="fa-regular fa-moon"></i>
                     {/if}
                 </button>
+            </li>
+            <li>
+                <a href="/blogs" title="blog" class="transition hover:border-b">
+                    blog
+                </a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/tkhadse/" title="linkedin">
