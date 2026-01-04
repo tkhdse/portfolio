@@ -13,28 +13,28 @@
             <img 
                 src={profilePic} 
                 alt="Tanish Khadse" 
-                class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full object-cover profile-shadow"
+                class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full object-cover profile-shadow select-none"
             />
         </div>
         
-    <!-- Text Content -->
-    <div class="flex-1 order-2 md:order-1 text-left">
-        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">Hi, I'm Tanish 👋</h1>
-        <div class="space-y-6 sm:space-y-4 text-sm sm:text-md text-gray-300 light-mode:text-[#66615E] leading-relaxed">
-            <p>I love challenges in distributed systems and low-level programming. Also have a drive for impact.</p>
-            <ul class="list-disc list-outside ml-5 [&>li::marker]:text-xl [&>li::marker]:text-white light-mode:[&>li::marker]:text-[#2d2a28]">
-                <li>BS-MCS degree at UIUC.</li>
-                <li>Got into GPU programming.</li>
-                <li>Going pro in ping pong one day.</li>
-                <li>Happy to chat :) </li>
-                <ul class="list-[circle] list-outside ml-6 mt-2 text-[0.75rem] text-gray-300 light-mode:text-[#5a5654]">
-                    <li>tkhadse2 [at] illinois [dot] edu</li>
+        <!-- Text Content -->
+        <div class="flex-1 order-2 md:order-1 text-left">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">Hi, I'm Tanish 👋</h1>
+            <div class="space-y-6 sm:space-y-4 text-sm sm:text-md text-gray-300 light-mode:text-[#66615E] leading-relaxed">
+                <p>I love challenges in distributed systems and low-level programming. Also have a drive for impact.</p>
+                <ul class="list-disc list-outside ml-5 [&>li::marker]:text-xl [&>li::marker]:text-white light-mode:[&>li::marker]:text-[#2d2a28]">
+                    <li>BS-MCS degree at UIUC.</li>
+                    <li>Got into GPU programming.</li>
+                    <li>Going pro in ping pong one day.</li>
+                    <li>Happy to chat :) </li>
+                    <ul class="list-[circle] list-outside ml-6 mt-2 text-[0.75rem] text-gray-300 light-mode:text-[#5a5654]">
+                        <li>tkhadse2 [at] illinois [dot] edu</li>
+                    </ul>
                 </ul>
-            </ul>
+            </div>
         </div>
     </div>
-        
-    </div>
+
     <!-- Divider -->
     <div class="w-full h-px bg-white light-mode:bg-[#5a5654] mb-12 sm:mb-16"></div>
 
@@ -89,10 +89,10 @@
             <li>
                 <div class="flex justify-between items-baseline gap-4">
                     <div class="flex items-baseline gap-3 flex-wrap">
-                        <span class="text-white light-mode:text-[#2d2a28] text-lg">LLVM-based Compiler with Optimizations</span>
+                        <span class="text-white light-mode:text-[#2d2a28] text-lg">PyTorch JIT Compiler</span>
                         <span class="flex gap-2 text-xs">
-                            <a href="#" class="text-gray-400 light-mode:text-[#5a5654] hover:text-white light-mode:hover:text-[#2d2a28] transition border-b border-gray-400 light-mode:border-[#5a5654] hover:border-white light-mode:hover:border-[#2d2a28]">[blog]</a>
-                            <!-- <a href="#" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[github]</a> -->
+                            <a href="/compiler" class="text-gray-400 light-mode:text-[#5a5654] hover:text-white light-mode:hover:text-[#2d2a28] transition border-b border-gray-400 light-mode:border-[#5a5654] hover:border-white light-mode:hover:border-[#2d2a28]">[blog]</a>
+                            <a href="https://github.com/tkhdse/soptRT" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[github]</a>
                         </span>
                     </div>
                     <span class="text-gray-400 light-mode:text-[#5a5654] whitespace-nowrap text-sm">Fall 2025 - present</span>

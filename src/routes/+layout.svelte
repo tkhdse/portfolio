@@ -68,7 +68,7 @@
 
 <div class="w-full h-full text-white dark:text-white light-mode:text-[#1e1e1e] font-sans transition-colors duration-300">
     <!-- Responsive container: full width with padding on mobile, 60% width on desktop -->
-    <div class="relative select-none w-full px-6 sm:px-8 md:w-[80%] lg:w-[70%] xl:w-[60%] h-full mx-auto pb-16 sm:pb-24">
+    <div class="relative w-full px-6 sm:px-8 md:w-[80%] lg:w-[70%] xl:w-[60%] h-full mx-auto pb-16 sm:pb-24">
         <Nav></Nav>
 		{@render children()}
 
