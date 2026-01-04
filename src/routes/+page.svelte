@@ -91,8 +91,8 @@
                     <div class="flex items-baseline gap-3 flex-wrap">
                         <span class="text-white light-mode:text-[#2d2a28] text-lg">PyTorch JIT Compiler</span>
                         <span class="flex gap-2 text-xs">
+                    <a href="https://github.com/tkhdse/soptRT" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[github]</a>
                             <a href="/compiler" class="text-gray-400 light-mode:text-[#5a5654] hover:text-white light-mode:hover:text-[#2d2a28] transition border-b border-gray-400 light-mode:border-[#5a5654] hover:border-white light-mode:hover:border-[#2d2a28]">[blog]</a>
-                            <a href="https://github.com/tkhdse/soptRT" class="text-gray-400 hover:text-white transition border-b border-gray-400 hover:border-white">[github]</a>
                         </span>
                     </div>
                     <span class="text-gray-400 light-mode:text-[#5a5654] whitespace-nowrap text-sm">Fall 2025 - present</span>
