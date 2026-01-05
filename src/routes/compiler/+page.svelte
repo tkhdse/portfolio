@@ -28,7 +28,7 @@
                 <li>nvFuser</li>
             </ul>
 
-            Now, I was able to figure out where these technologies fit into a compiler stack.
+            Now, I somewhat understand where these technologies fit into a compiler stack.
             MLIR serves as compiler infrastructure, the "skeleton" of the compiler we build; 
             TVM is a fullstack compiler that emphasizes loop-level/tiling optimizations and code generation for heterogenous devices;
             Triton is a language/IR/JIT compiler (used by PyTorch 2.0) that helps write extensible GPU kernels;
