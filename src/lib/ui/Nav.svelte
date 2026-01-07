@@ -46,11 +46,11 @@ if (browser) {
                     {/if}
                 </button>
             </li>
-            <!-- <li>
-                <a href="/blogs" title="blog" class="transition hover:border-b">
+            <li>
+                <a href="/compiler" title="blog" class="transition hover:border-b">
                     blog
                 </a>
-            </li> -->
+            </li>
             <li>
                 <a href="https://www.linkedin.com/in/tkhadse/" title="linkedin">
                     <i class="fa-brands fa-linkedin cursor-pointer text-2xl"></i>
