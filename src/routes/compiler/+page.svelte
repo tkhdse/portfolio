@@ -10,6 +10,25 @@
         </div>
 
         <div class="space-y-6 sm:space-y-4 text-sm sm:text-md text-gray-300 light-mode:text-[#66615E] leading-relaxed">
+            <span class="font-bold">[1/22/26]</span>
+            It's been a few weeks of work (and travelling), but I'm here to report my current progress. Frankly, the past few weeks involved a lot of reading and learning on these topics: 
+            <ul class="list-disc list-outside ml-5 [&>li::marker]:text-xl [&>li::marker]:text-white light-mode:[&>li::marker]:text-[#2d2a28]">
+                <li><a href="https://docs.pytorch.org/assets/pytorch2-2.pdf" class="underline">PyTorch 2 (TorchDynamo/TorchInductor)</a>: this was a useful starting point as the paper discusses the implementation decisions behind TorchDynamo and its Graph Capture mechanism. This essentially helped me narrow down my design to use PyTorch's <a href="https://docs.pytorch.org/docs/stable/fx.html" class="underline">torch.fx</a> toolkit.</li>
+                <li>JIT Compilers</li>
+                <li><a href="https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf" class="underline">Triton Compiler</a></li>
+            </ul>
+
+            A major development includes my Rust setup. I'm new to the Rust language, so I famarlized myself with Cargo (Rust's package management system), and played around with Rust bindings for PyTorch (provided by <a href="https://github.com/PyO3/pyo3" class="underline">PyO3</a>) and 
+            Rust bindings for MLIR (via <a href="https://github.com/mlir-rs/melior" class="underline">Melior</a>).
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="space-y-6 sm:space-y-4 text-sm sm:text-md text-gray-300 light-mode:text-[#66615E] leading-relaxed">
             <span class="font-bold">[1/4/26]</span>
             So, I've been working on this project for the past few weeks. Up until yesterday, I spent most of my time reading up on basic theory behind 
             ML/DL compilers. I plan to add much more to this blog to help me reinforce whatever I learn and to log my journey into this field (incase it inspires anyone). 
@@ -71,6 +90,23 @@
             Overtime, I became curious on where the tech stacks I learned about in these interviews come into play in the software world.  -->
             
 
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="space-y-6 sm:space-y-4 text-sm sm:text-md text-gray-300 light-mode:text-[#66615E] leading-relaxed">
+            <span class="font-bold">Cool links:</span> I'd also like to highlight some cool links I found throughout this project. There are a lot of cool startups and innovations in this field of ML compilers that I want to further explore:
+
+            
+            <ul class="list-disc list-outside ml-5 [&>li::marker]:text-xl [&>li::marker]:text-white light-mode:[&>li::marker]:text-[#2d2a28]">
+                <li><a href="https://docs.nvidia.com/cuda/tile-ir/latest/index.html#" class="underline">Tile IR</a>: NVIDIA released this somewhat recently. This is a "low-level tile virtual machine" allowing a developer to work in terms of tiles.</li>
+                <li><a href="https://xania.org/AoCO2025-archive" class="underline">Compiler Optimization Advent Calendar</a>: I saw this on LinkedIn; as the name suggests, the author goes over some interesting compiler designs.</li>
+                <li><a href="https://www.modular.com/" class="underline">Modular</a>: really cool company led by Chris Lattner who I've been following for a while. The language seems very well-designed and I am curious to see how its compiler works.</li>
+                <!-- <li><a href="https://xania.org/AoCO2025-archive" class="underline">Compiler Optimization Advent Calendar</a>: I saw this on LinkedIn; as the name suggests, the author goes over some interesting compiler designs</li> -->
+            </ul>
         </div>
     </div>
 
