@@ -18,8 +18,39 @@
                 <li><a href="https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf" class="underline">Triton Compiler</a></li>
             </ul>
 
-            A major development includes my Rust setup. I'm new to the Rust language, so I famarlized myself with Cargo (Rust's package management system), and played around with Rust bindings for PyTorch (provided by <a href="https://github.com/PyO3/pyo3" class="underline">PyO3</a>) and 
-            Rust bindings for MLIR (via <a href="https://github.com/mlir-rs/melior" class="underline">Melior</a>).
+            A major development includes my Python frontend & Rust setup. This project is actually my 2nd time ever using Rust: for setup purposes, I familiarized myself with Cargo (Rust's package management system), and I'm getting the hang of the memory lifetime model that Rust provides. I also played around with Rust bindings for PyTorch (provided by <a href="https://github.com/PyO3/pyo3" class="underline">PyO3</a>) and 
+            Rust bindings for MLIR (via <a href="https://github.com/mlir-rs/melior" class="underline">Melior</a>). What's next? I have to get my hands dirty with MLIR. I have been using the <a href="https://mlir.llvm.org/docs/Tutorials/Toy/" class="underline">Toy example</a> to learn implementation fundamentals for an MLIR-based compiler. 
+
+
+            <figure class="my-8 text-center max-w-lg mx-auto">
+                <img 
+                    src="src/routes/compiler/assets/figure1.png" 
+                    alt="sopt API usage"
+                    class="w-full h-auto rounded-lg shadow-lg"
+                />
+                <figcaption class="mt-3 text-sm text-gray-400 light-mode:text-gray-600 italic">
+                    sopt API usage
+                </figcaption>
+            </figure>
+
+            Above, I have a very simple 2-layer network defined using PyTorch. Similar to PyTorch, I utilize a compile() decorator under my own sopt library. Taking a step back from the technical side, I also wanted 
+            to share how fascinating I found this step; I essentially built my own importable Python library that funnels into the binary for my Rust-based compiler! Many libraries that I use 
+            on a daily basis follow some form of what I've just implemented here, which was eye-opening to me. 
+            <br/>
+            <br/>
+            Anyway, during execution, sopt.compile() converts the torch.fx format into a list of related JSON objects that can easily be received by the Rust backend. I set up a class, PyNode, that encapsulates the important data fields from FXNodes. 
+            <figure class="my-8 text-center max-w-lg mx-auto">
+                <img 
+                    src="src/routes/compiler/assets/figure2.png" 
+                    alt="sopt API usage"
+                    class="w-full h-auto rounded-lg shadow-lg"
+                />
+                <figcaption class="mt-3 text-sm text-gray-400 light-mode:text-gray-600 italic">
+                    sopt compiler receiver endpoint for sopt.compile()
+                </figcaption>
+            </figure>
+            From this point, I am working on setting up my first Dialect/IR on the MLIR skeleton. I call it the "soptfx" dialect. The idea is to lower the PyNodes to operations in MLIR in order to make the data graph; since FX nodes come in 3 main flavors 
+            (placeholders, callfunctions, and outputs), I handle this lowering separately for each case. My goal here is to output an accurate .mlir file in order to gauge the correctness of my current logic. 
         </div>
 
         <br>
@@ -38,7 +69,7 @@
 
             I'll get started with some preliminaries: my related background up to this point involves GPU programming (CUDA), systems programming, ML systems, and a bit of compiler construction (LLVM). 
             All of these were picked up through courses at my school, <span class="text-blue-700">U</span><span class="text-orange-500">I</span><span class="text-blue-700">U</span><span class="text-orange-500">C</span>.
-            Over the past few weeks, I researched a few more technologies: 
+            Over the past few weeks, I read up on a few more technologies: 
             <ul class="list-disc list-outside ml-5 [&>li::marker]:text-xl [&>li::marker]:text-white light-mode:[&>li::marker]:text-[#2d2a28]">
                 <li>MLIR</li>
                 <li>TVM</li>
