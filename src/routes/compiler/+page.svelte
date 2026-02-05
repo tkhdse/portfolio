@@ -24,7 +24,7 @@
 
             <figure class="my-8 text-center max-w-lg mx-auto">
                 <img 
-                    src="src/routes/compiler/assets/figure1.png" 
+                    src="blog/figure1.png" 
                     alt="sopt API usage"
                     class="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -41,7 +41,7 @@
             Anyway, during execution, sopt.compile() converts the torch.fx format into a list of related JSON objects that can easily be received by the Rust backend. I set up a class, PyNode, that encapsulates the important data fields from FXNodes. 
             <figure class="my-8 text-center max-w-lg mx-auto">
                 <img 
-                    src="src/routes/compiler/assets/figure2.png" 
+                    src="blog/figure2.png" 
                     alt="sopt API usage"
                     class="w-full h-auto rounded-lg shadow-lg"
                 />
