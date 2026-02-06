@@ -4,12 +4,12 @@
 
 
 <div>
-    <div class="text-left mb-4 mt-8 sm:mt-12 md:mt-16 sm:mb-16 md:mb-20">
+    <div class="text-left mb-4 mt-8 sm:mt-12 md:mt-16 sm:mb-16 md:mb-20 sm:space-y-4 text-sm sm:text-md text-gray-300 light-mode:text-[#66615E] leading-relaxed">
         <div class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
             PyTorch JIT Compiler
         </div>
 
-        <div class="space-y-6 sm:space-y-4 text-sm sm:text-md text-gray-300 light-mode:text-[#66615E] leading-relaxed">
+        <div class="space-y-6">
             <span class="font-bold">[1/22/26]</span>
             It's been a few weeks of work (and travelling), but I'm here to report my current progress. Frankly, the past few weeks involved a lot of reading and learning on these topics: 
             <ul class="list-disc list-outside ml-5 [&>li::marker]:text-xl [&>li::marker]:text-white light-mode:[&>li::marker]:text-[#2d2a28]">
@@ -59,7 +59,7 @@
         <br>
 
 
-        <div class="space-y-6 sm:space-y-4 text-sm sm:text-md text-gray-300 light-mode:text-[#66615E] leading-relaxed">
+        <div class="space-y-6">
             <span class="font-bold">[1/4/26]</span>
             So, I've been working on this project for the past few weeks. Up until yesterday, I spent most of my time reading up on basic theory behind 
             ML/DL compilers. I plan to add much more to this blog to help me reinforce whatever I learn and to log my journey into this field (incase it inspires anyone). 
