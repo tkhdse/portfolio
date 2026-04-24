@@ -9,9 +9,21 @@
             PyTorch JIT Compiler
         </div>
 
+
+        <div class="space-y-6">
+            <span class="font-bold">[2/7/26]</span> I'm back with some updates! Unfortunately, I haven't been able to code more of the compiler, but I spent some time learning more theory and cool technologies that I wanted to share. 
+        </div>  
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
         <div class="space-y-6">
             <span class="font-bold">[1/22/26]</span>
-            It's been a few weeks of work (and travelling), but I'm here to report my current progress. Frankly, the past few weeks involved a lot of reading and learning on these topics: 
+            It's been a few weeks of work (and travelling), but I'm here to report my current progress. The past few weeks involved a lot of reading and learning on these topics: 
             <ul class="list-disc list-outside ml-5 [&>li::marker]:text-xl [&>li::marker]:text-white light-mode:[&>li::marker]:text-[#2d2a28]">
                 <li><a href="https://docs.pytorch.org/assets/pytorch2-2.pdf" class="underline">PyTorch 2 (TorchDynamo/TorchInductor)</a>: this was a useful starting point as the paper discusses the implementation decisions behind TorchDynamo and its Graph Capture mechanism. This essentially helped me narrow down my design to use PyTorch's <a href="https://docs.pytorch.org/docs/stable/fx.html" class="underline">torch.fx</a> toolkit.</li>
                 <li>JIT Compilers</li>
@@ -57,7 +69,6 @@
         <br>
         <br>
         <br>
-
 
         <div class="space-y-6">
             <span class="font-bold">[1/4/26]</span>

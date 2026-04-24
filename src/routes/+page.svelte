@@ -21,7 +21,10 @@
         <div class="flex-1 order-2 md:order-1 text-left">
             <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">Hi, I'm Tanish 👋</h1>
             <div class="space-y-6 sm:space-y-4 text-sm sm:text-md text-gray-300 light-mode:text-[#66615E] leading-relaxed">
-                <p>I love challenges in distributed systems and low-level programming. Also have a drive for impact.</p>
+                <p>I love challenges in distributed systems and low-level programming. I'm currently exploring the world of WebAssembly through an optimization to
+                    its Linux interface (<a href="https://github.com/gohinv/WALI_opt/tree/main" class="border-b border-white">WALIopt</a>), and 
+                        <a href="https://github.com/VishruthR/OpenWhisk/" class="border-b border-white">WarmWhisk</a>,
+                     a serverless platform that runs WebAssembly to improve cold-start costs.</p>
                 <ul class="list-disc list-outside ml-5 [&>li::marker]:text-xl [&>li::marker]:text-white light-mode:[&>li::marker]:text-[#2d2a28]">
                     <li>BS-MCS degree at UIUC.</li>
                     <li>Got into GPU programming.</li>
